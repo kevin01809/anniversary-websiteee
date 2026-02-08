@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Photo Album 📸</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <div class="heart">📸</div>
+        <div>Our Photo Album</div>
+      </div>
+      <div class="navlinks">
+        <a class="pill" href="index.html">Home</a>
+<a class="pill active" href="gallery.html">Photo Album</a>
+<a class="pill" href="story.html">Our Story</a>
+<a class="pill" href="letter.html">Love Note</a>
+      </div>
+    </div>
+
+    <div class="card pad" style="margin-top:22px">
+      <div class="kicker">Tap any photo</div>
+      <div class="h2">Memories I never want to lose</div>
+      <p class="p">Click a photo to open it. Use <b>← →</b> keys to navigate. Press <b>Esc</b> to close.</p>
+    </div>
+
+    <div id="galleryGrid" class="gallery"></div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <div class="lb-card">
+        <div class="lb-top">
+          <div class="lb-title"><span id="lbTitle">Memory</span> • <span id="lbCount">1/1</span></div>
+          <div class="lb-actions">
+            <button class="iconbtn" id="lbPrev" title="Previous">←</button>
+            <button class="iconbtn" id="lbNext" title="Next">→</button>
+            <button class="iconbtn" id="lbClose" title="Close">✕</button>
+          </div>
+        </div>
+        <div class="lb-imgwrap">
+          <img id="lbImg" src="" alt="">
+        </div>
+        <div class="lb-bottom">
+          <div id="lbQuote">“With you, I don’t count the days — I collect the moments.”</div>
+          <a class="pill" href="letter.html">Open Love Note →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Tip: Replace photos inside <b>assets/photos</b> anytime.</div>
+  </div>
+
+  <script src="assets/js/gallery_data.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
